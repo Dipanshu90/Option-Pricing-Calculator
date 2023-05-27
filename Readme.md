@@ -1,0 +1,1 @@
+To run :- python manage.py runserver in terminal and then navigate to localhost:8000 in browser

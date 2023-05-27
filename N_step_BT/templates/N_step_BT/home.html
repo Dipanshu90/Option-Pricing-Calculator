@@ -1,0 +1,19 @@
+{% extends 'Two_step_BT/base.html' %}
+
+{% block content %}
+
+<form action={% url 'n_step:calc_n_step' %} method='post'>
+
+    {% csrf_token %}
+    <input placeholder="Stock Price(in $)" type="text" name="Snot"><br>
+    <input placeholder="Number of Steps" type="text" name="n"><br>
+    <input placeholder="Strike Price(in $)" type="text" name="K"><br>
+    <input placeholder="Risk Free Rate(in %)" type="text" name="r"><br>
+    <input placeholder="Volatility(in %)" type="text" name="sigma"><br>
+    <input placeholder="Time(in months)" type="text" name="T"><br>
+    <input placeholder="Dividend yeild(in %)" type="text" name="dividend"><br>
+    <input id="button" type="submit">
+
+</form>
+
+{% endblock %}

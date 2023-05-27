@@ -1,0 +1,18 @@
+{% extends 'Two_step_BT/base.html' %}
+
+{% block content %}
+<h1 style="display: block;
+border: none;
+background: #f8f4e5;
+min-width: 250px;
+font-family: Fjalla One;
+margin-bottom: 20px;
+text-decoration: underline;
+outline: none;
+color: black;">European Option Pricing</h1><br>
+
+<a style="text-decoration:none" href={% url 'two_step:two_step' %}>Two Step Binomial Tree</a><br>
+<a style="text-decoration:none" href={% url 'n_step:n_step' %}>N-Step Binomial Tree</a><br>
+<a style="text-decoration:none" href={% url 'black_scholes:bs' %}>Black Scholes Formula Calculator</a><br>
+
+{% endblock %}
